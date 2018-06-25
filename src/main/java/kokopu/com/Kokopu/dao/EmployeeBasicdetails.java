@@ -20,7 +20,7 @@ public class EmployeeBasicdetails {
 		Employee emp = new Employee();
 		for(Row row:rs)
 		{
-			emp.setEmpId(row.getInt(0));
+			emp.setEmpId(row.getLong(0));
 			emp.setEmpName(row.getString(1));
 		}
 		return emp;

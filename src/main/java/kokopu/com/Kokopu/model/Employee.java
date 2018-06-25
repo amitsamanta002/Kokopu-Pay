@@ -5,16 +5,16 @@ import org.springframework.stereotype.Component;
 @Component
 public class Employee {
 	
-	private int empId,empBankId;
+	private long empId,empBankId;
 	private String empName,empDept,empPanno;
 	private double empSalary;
-	public int getEmpId() {
+	public long getEmpId() {
 		return empId;
 	}
-	public void setEmpId(int empId) {
-		this.empId = empId;
+	public void setEmpId(long l) {
+		this.empId = l;
 	}
-	public int getEmpBankId() {
+	public long getEmpBankId() {
 		return empBankId;
 	}
 	public void setEmpBankId(int empBankId) {

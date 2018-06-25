@@ -8,7 +8,7 @@ public class ConnectCassandra {
 	public Session ConnectDB()
 	{
 		Cluster cluster = Cluster.builder().addContactPoint("127.0.0.1").build();
-		Session session = cluster.connect("nutsbit");
+		Session session = cluster.connect("neptune");
 		return session;
 		
 	}
