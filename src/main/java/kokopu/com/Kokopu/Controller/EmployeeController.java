@@ -15,7 +15,7 @@ public class EmployeeController {
 	private EmployeeDetail employeeDetail;
 	
 	@RequestMapping("/payrole/{empId}")
-	public Employee getOrderdetail(@PathVariable("empId") int empId) {
+	public Employee getOrderdetail(@PathVariable("empId") long empId) {
 		
 		return employeeDetail.getEmployeeDetails(empId);
 		

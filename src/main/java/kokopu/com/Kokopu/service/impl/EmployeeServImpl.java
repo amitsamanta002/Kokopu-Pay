@@ -10,7 +10,7 @@ import kokopu.com.Kokopu.service.EmployeeDetail;
 public class EmployeeServImpl implements EmployeeDetail{
 
 	@Override
-	public Employee getEmployeeDetails(int empId) {
+	public Employee getEmployeeDetails(long empId) {
 		EmployeeBasicdetails employeeBasicdetails = new EmployeeBasicdetails();
 		return employeeBasicdetails.getEmployeeBasicdetails(empId);
 	}

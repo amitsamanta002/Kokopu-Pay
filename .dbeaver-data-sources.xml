@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data-sources>
+	<data-source id="cql-1643d923bb3-52723570d532ebfc" provider="cassandra" driver="cql" name="Cassandra CQL - neptune" save-password="true" show-system-objects="true" read-only="false">
+		<connection host="127.0.0.1" port="9042" server="" database="neptune" url="cql://127.0.0.1:9042/neptune" user="amitsamanta" password="PgUCKEBBTTZUS15nd/c=" type="dev">
+			<provider-property name="@dbeaver-ssl@" value="false"/>
+			<network-handler type="CONFIG" id="cassandra_ssl" enabled="false" save-password="false"/>
+			<network-handler type="TUNNEL" id="ssh_tunnel" enabled="false" save-password="false">
+				<property name="sshConnectTimeout" value="10000"/>
+				<property name="port" value="22"/>
+				<property name="implementation" value="jsch"/>
+				<property name="authType" value="PASSWORD"/>
+			</network-handler>
+			<network-handler type="PROXY" id="socks_proxy" enabled="false" save-password="false">
+				<property name="socks-port" value="1080"/>
+			</network-handler>
+		</connection>
+		<custom-property name="resultset.maxrows" value="200000"/>
+	</data-source>
+	<filters/>
+</data-sources>
