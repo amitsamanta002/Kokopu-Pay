@@ -33,6 +33,7 @@ public class EmployeeBasicdetails {
 		{
 			emp.setEmpId(row.getLong(0));
 			emp.setEmpName(row.getString(1));
+
 		}
 		
 		rs=null;
